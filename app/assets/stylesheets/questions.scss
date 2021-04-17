@@ -1,0 +1,39 @@
+// Place all the styles related to the questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$bg-color: #EFF2FA;
+
+body {
+    background-color: $bg-color;
+}
+
+a {
+    text-decoration: none;
+    color: #243a77;
+    border: 1px solid #243a77;
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px 15px;
+    opacity: 0.7;
+}
+
+.card {
+    border-radius: 5px;
+    margin: 20px;
+    margin-left: 0px;
+    padding: 5px;
+}
+
+.bar {
+    background-color: rgba(0,0,0,.3);
+    height: 80px;
+    width: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    &:hover {
+        background-color:#243a77;
+        transition-delay: 150ms;
+        transition-duration: 100ms;
+    }
+}

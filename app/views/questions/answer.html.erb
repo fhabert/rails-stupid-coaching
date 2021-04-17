@@ -1,0 +1,36 @@
+<div class="container">
+    <h1>Stupid Coaching</h1>
+    <% regex = /.*\?$/ %>
+    <% if @answer == 'I am going to work' %>
+        <div class="card">
+            <div class="d-flex">
+                <div class="bar"></div>
+                <div class="infos">
+                    <%= @answer %>
+                    <p>- Great!</p>
+                </div>
+            </div>
+        </div>
+    <% elsif regex.match(@answer) %>
+        <div class="card">
+            <div class="d-flex">
+                <div class="bar"></div>
+                <div class="infos">
+                    <%= @answer %>
+                    <p>- Silly question, get dressed and go to work!</p>
+                </div>
+            </div>
+        </div>
+    <% else %>
+        <div class="card">
+            <div class="d-flex">
+                <div class="bar"></div>
+                <div class="infos">
+                    <%= @answer %>
+                    <p>- I don't care, get dressed and go to work!</p>
+                </div>
+            </div>
+        </div>
+    <% end %>
+    <%= link_to "Ask a new question", ask_path %>
+</div> 
